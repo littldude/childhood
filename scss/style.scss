@@ -830,6 +830,7 @@ a {
         padding: 3% 0 0 0;
         background-image: none;
         &__text {
+            margin-left: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -839,7 +840,7 @@ a {
             display: none;
         }
         &__img {
-            height: 470px;
+            height: 350px;
             position: static;
         }
     }
@@ -936,6 +937,87 @@ a {
                 display: block;
                 width: 28px;
                 height: 28px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .buy {
+        &__subtitle {
+            width: 70%;
+            margin: 6% auto 11%;
+        }
+    }
+}
+@media (max-width: 736px) {
+    .header {
+        &__link {
+            margin: 0 auto 3% auto;
+        }
+    }
+    .title {
+        font-size: 38px;
+        &__new {
+            width: 68%;
+        }
+    }
+    .autor {
+        &__text {
+            &--about {
+                font-size: 22px;
+            }
+        }
+    }
+    .buy {
+        &__subtitle {
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: 568px) {
+    .intro {
+        &__subtitle {
+            width: 260px;
+            font-size: 18px;
+        }
+        &__img {
+            height: 205px;
+        }
+    }
+    .title {
+        font-size: 30px;
+        &__about {
+            padding-top: 30px;
+            &::after {
+                width: 50%;
+                height: 33%;
+            }
+        }
+    }
+    .button {
+        font-size: 16px;
+        width: 106px;
+    }
+    .about {
+        &__box {
+            .item {
+                &__text {
+                    font-size: 22px;
+                }
+            }
+        }
+        .new {
+            &__block {
+                &--item {
+                    margin-left: 10%;
+                    &__header {
+                        left: -50px;
+                        &::after {
+                            border-left: 52px transparent solid;
+                            border-top: 30px #9a70de solid;
+                        }
+                    }
+                }
             }
         }
     }

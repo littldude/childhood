@@ -1,0 +1,706 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+  transition: 0.2s linear;
+}
+
+.container {
+  max-width: 1780px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-purple {
+  background-color: #d6d6f2;
+}
+.section-white {
+  background-color: #ffffff;
+}
+.section-intro {
+  padding: 50px 0 172px 0;
+}
+
+.header__link {
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 293px;
+  height: 59px;
+}
+.header__link img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  position: relative;
+  background-color: #ffffff;
+  background-image: url(../img/bg-form.svg);
+  background-repeat: no-repeat;
+  background-position-x: 265%;
+  background-position-y: 37%;
+  background-size: 91%;
+  padding: 116px 0 40px 0;
+}
+.intro__text {
+  margin-left: 150px;
+}
+.intro__subtitle {
+  width: 669px;
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.98px;
+  color: #000000;
+}
+.intro__subtitle:last-child {
+  width: 634px;
+  color: #010101;
+}
+.intro__links {
+  margin-top: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 278px;
+  background-color: #ebebf7;
+  margin-left: 42px;
+  padding: 26px 30px;
+}
+.intro__links--item {
+  display: block;
+  width: 51px;
+  height: 51px;
+}
+.intro__links--item svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.intro__img {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: 762px;
+  bottom: 0;
+  right: 80px;
+}
+
+.button {
+  display: block;
+  font-family: "FuturaPT";
+  font-size: 49px;
+  color: #010504;
+  width: 400px;
+  padding: 20px 0;
+  background-color: #fbb205;
+  text-align: center;
+  border: 1px #000000 solid;
+}
+.button__intro {
+  margin-top: 57px;
+}
+.button__buy {
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-size: 97px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1.94px;
+  color: #000000;
+}
+.title__intro {
+  margin: 50px 0;
+  width: 599px;
+  line-height: 1;
+}
+.title__about {
+  text-align: center;
+  padding-top: 150px;
+  position: relative;
+  z-index: 100;
+}
+.title__about::before {
+  content: "";
+  position: absolute;
+  bottom: -4%;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
+  width: 805px;
+  height: 71px;
+  background-color: #fbb205;
+  z-index: -20;
+}
+.title__new {
+  margin: 0 auto;
+  width: 1099px;
+}
+.title__new span {
+  color: #fbb205;
+}
+.title__autor {
+  margin: 0;
+  text-align: left;
+}
+.title__footer {
+  text-align: center;
+}
+
+.about__box {
+  padding: 130px 0 140px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__box .item {
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 41%;
+}
+.about__box .item:last-child {
+  margin: 0 auto;
+  width: 550px;
+}
+.about__box .item__img {
+  margin-bottom: 57px;
+  display: block;
+  width: 78px;
+  height: 63px;
+}
+.about__box .item__img svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #fbb205;
+}
+.about__box .item__text {
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.98px;
+  text-align: left;
+  color: #000000;
+}
+.about .new__block {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .new__block--item {
+  margin-bottom: 217px;
+  position: relative;
+  width: 733px;
+  height: 400px;
+  background-color: #ebebf7;
+}
+.about .new__block--item__header {
+  position: absolute;
+  left: -83px;
+  top: -51px;
+  width: 764px;
+  height: 157px;
+  background-color: #b887fe;
+  padding: 31px 0 0 139px;
+  font-family: "Gilroy";
+  font-size: 49px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.98px;
+  text-align: left;
+  color: #000000;
+}
+.about .new__block--item__header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 157px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 69px #9a70de solid;
+  border-left: 84px transparent solid;
+}
+.about .new__block--item__text {
+  padding: 150px 35px 50px 55px;
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.98px;
+  text-align: left;
+  color: #000000;
+}
+.about .new__block--img {
+  display: block;
+  position: absolute;
+  bottom: 240px;
+  left: -110px;
+}
+
+.autor {
+  position: relative;
+  z-index: 50;
+  padding: 169px 0 108px 0;
+}
+.autor__inner {
+  display: block;
+  background-color: #ffffff;
+  width: 1205px;
+}
+.autor__text {
+  padding: 87px 50px 90px 50px;
+}
+.autor__text--about {
+  margin-top: 67px;
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.98px;
+  color: #010101;
+}
+.autor__text--about span {
+  font-weight: bold;
+}
+.autor .subtitle {
+  font-family: "FuturaPT";
+  font-size: 69px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.91;
+  letter-spacing: 1.38px;
+  color: #000000;
+}
+.autor .subtitle::after {
+  margin-top: 45px;
+  content: "";
+  display: block;
+  width: 174px;
+  height: 5px;
+  background-color: #fbb205;
+}
+.autor__img {
+  display: block;
+  position: absolute;
+  top: 373px;
+  left: 60%;
+  z-index: -1;
+}
+
+.buy {
+  padding: 194px 0 117px 0;
+}
+.buy__title {
+  margin: 0;
+  text-align: left;
+}
+.buy__subtitle {
+  margin: 92px 0 167px 0;
+  width: 1350px;
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: 0.98px;
+  color: #000000;
+}
+.buy__text {
+  margin-bottom: 130px;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 97px;
+  font-weight: bold;
+  line-height: 0.58;
+  letter-spacing: 1.94px;
+  color: #fbb205;
+}
+.buy__cost {
+  position: relative;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 97px;
+  font-weight: bold;
+  line-height: 0.58;
+  letter-spacing: 1.94px;
+  color: #000000;
+}
+.buy__cost--last::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 705px;
+  height: 5px;
+  background-color: #fbb205;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.buy__cost--new {
+  margin: 100px 0 133px 0;
+  font-size: 139px;
+}
+
+.footer {
+  padding: 117px 0 140px 0;
+  background-color: #ffffff;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__inner--text {
+  font-family: "FuturaPT";
+  font-size: 49px;
+  font-weight: 300;
+  line-height: 1.41;
+  letter-spacing: 0.98px;
+  text-align: center;
+  color: #000000;
+}
+.footer__links {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__links--item {
+  margin-right: 36px;
+  display: block;
+  width: 51px;
+  height: 51px;
+}
+.footer__links--item:last-child {
+  margin-right: 0;
+}
+.footer__links--item svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*ADAPTIVE*/
+@media (max-width: 1366px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .intro {
+    background-position-x: 254px;
+    background-position-y: 36%;
+    background-size: 102%;
+    padding: 6% 0 5% 0;
+  }
+  .intro__text {
+    margin-left: 7%;
+  }
+  .intro__subtitle {
+    font-size: 30px;
+  }
+  .intro__subtitle:last-child {
+    width: 634px;
+    color: #010101;
+  }
+  .intro__links {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    background-color: #ebebf7;
+    margin-left: 42px;
+    padding: 26px 30px;
+  }
+  .intro__links--item {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .intro__links--item svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .intro__img {
+    height: 64%;
+    right: 0;
+  }
+
+  .button {
+    font-size: 30px;
+    width: 20%;
+    padding: 10px 0;
+  }
+  .button__intro {
+    margin-top: 5%;
+  }
+  .button__buy {
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+  .title__intro {
+    margin: 5% 0;
+    width: 599px;
+    line-height: 1;
+  }
+  .title__about {
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+    z-index: 100;
+  }
+  .title__about::before {
+    content: "";
+    position: absolute;
+    bottom: -4%;
+    right: 50%;
+    transform: translateX(50%);
+    display: block;
+    width: 45%;
+    height: 20%;
+  }
+  .title__new {
+    width: 750px;
+    text-align: center;
+  }
+
+  .about__box {
+    padding: 13% 3%;
+  }
+  .about__box .item {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 41%;
+  }
+  .about__box .item:last-child {
+    margin: 0 auto;
+    width: 550px;
+  }
+  .about__box .item__img {
+    margin-bottom: 57px;
+    display: block;
+    width: 72px;
+    height: 58px;
+  }
+  .about__box .item__text {
+    font-size: 30px;
+  }
+  .about .new__block {
+    padding: 0 2%;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about .new__block--item {
+    margin-bottom: 217px;
+    width: 40%;
+    height: 40%;
+  }
+  .about .new__block--item__header {
+    position: absolute;
+    left: -83px;
+    top: -51px;
+    width: 110%;
+    height: 40%;
+    padding: 15px 0 0 140px;
+    font-size: 28px;
+  }
+  .about .new__block--item__header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px #9a70de solid;
+  }
+  .about .new__block--item__text {
+    padding: 15% 5% 7% 10%;
+    font-family: "FuturaPT";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.98px;
+    text-align: left;
+    color: #000000;
+  }
+  .about .new__block--img {
+    display: block;
+    position: absolute;
+    bottom: 240px;
+    left: -110px;
+  }
+
+  .autor {
+    position: relative;
+    z-index: 50;
+    padding: 5% 0 3% 0;
+  }
+  .autor__inner {
+    display: block;
+    background-color: #ffffff;
+    width: 65%;
+  }
+  .autor__text {
+    padding: 5%;
+  }
+  .autor__text--about {
+    margin-top: 5%;
+    font-family: "FuturaPT";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.98px;
+    color: #010101;
+  }
+  .autor__text--about span {
+    font-weight: bold;
+  }
+  .autor .subtitle {
+    font-size: 30px;
+  }
+  .autor .subtitle::after {
+    margin-top: 3%;
+  }
+  .autor__img {
+    display: block;
+    position: absolute;
+    height: 80%;
+    overflow: hidden;
+    width: auto;
+    top: 20%;
+    left: 58%;
+    z-index: -1;
+  }
+
+  .buy {
+    padding: 6% 0 4% 0;
+  }
+  .buy__title {
+    margin: 0;
+    text-align: left;
+  }
+  .buy__subtitle {
+    margin: 6% 0 11% 0;
+    width: auto;
+    font-size: 30px;
+  }
+  .buy__text {
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 60px;
+  }
+  .buy__cost {
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+  }
+  .buy__cost--last::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37%;
+    height: 10%;
+  }
+  .buy__cost--new {
+    margin: 100px 0 133px 0;
+    font-size: 100px;
+  }
+
+  .footer {
+    padding: 5% 0 3% 0;
+    background-color: #ffffff;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__inner--text {
+    font-size: 30px;
+  }
+  .footer__links {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__links--item {
+    margin-right: 36px;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1112px) {
+  .container {
+    padding: 0 1%;
+  }
+}
+/*FONTS*/
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../fonts/FuturaPT-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../fonts/FuturaPT-Book.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FuturaPT";
+  src: url(../fonts/FuturaPT-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/gilroy-black.ttf);
+  font-weight: 900;
+}

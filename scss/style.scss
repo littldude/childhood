@@ -1091,6 +1091,37 @@ a {
         }
     }
 }
+@media (max-width: 375px) {
+    .title {
+        font-size: 28px;
+        &__about {
+            &::before {
+                width: 71%;
+            }
+        }
+    }
+    .about {
+        .new {
+            &__block {
+                &--item {
+                    &__header {
+                        font-size: 22px;
+                        width: 330px;
+                        &::after {
+                            border-left: 31px transparent solid;
+                            border-top: 20px #9a70de solid;
+                        }
+                    }
+                    &__text {
+                        font-size: 18px;
+                        padding: 65px 20px 30px 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
 
 
 /*FONTS*/

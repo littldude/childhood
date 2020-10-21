@@ -1010,6 +1010,27 @@ a:hover {
     font-size: 45px;
   }
 }
+@media (max-width: 375px) {
+  .title {
+    font-size: 28px;
+  }
+  .title__about::before {
+    width: 71%;
+  }
+
+  .about .new__block--item__header {
+    font-size: 22px;
+    width: 330px;
+  }
+  .about .new__block--item__header::after {
+    border-left: 31px transparent solid;
+    border-top: 20px #9a70de solid;
+  }
+  .about .new__block--item__text {
+    font-size: 18px;
+    padding: 65px 20px 30px 20px;
+  }
+}
 /*FONTS*/
 @font-face {
   font-family: "FuturaPT";

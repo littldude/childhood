@@ -1022,6 +1022,75 @@ a {
         }
     }
 }
+@media (max-width: 414px) {
+    .title {
+        &__about {
+            &::before {
+                width: 65%;
+                height: 30%;
+            }
+        }
+        &__new {
+            width: 98%;
+        }
+    }
+    .about {
+        .new {
+            &__block {
+                &--item {
+                    margin-left: 7%;
+                    width: 90%;
+                    height: 50%;
+                    &__header {
+                        left: -30px;
+                        top: -25px;
+                        width: 365px;
+                        height: 70px;
+                        padding: 10px 0 0 50px;
+                        &::after {
+                            border-left: 31px transparent solid;
+                            border-top: 20px #9a70de solid;
+                        }
+                    }
+                    &__text {
+                        padding: 65px 20px 30px 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .autor {
+        .subtitle {
+            font-size: 22px;
+            &::after {
+                margin: 15px auto 0 auto;
+            }
+        }
+    }
+    .buy {
+        &__subtitle {
+            width: 100%;
+            font-size: 22px;
+            line-height: 1.09;
+            letter-spacing: 0.44px;
+        }
+        &__text {
+            font-size: 30px;
+        }
+        &__cost {
+            font-size: 30px;
+            &--last {
+                &::after {
+                    width: 55%;
+                }
+            }
+            &--new {
+                font-size: 45px;
+            }
+        }
+    }
+}
 
 
 /*FONTS*/

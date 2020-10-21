@@ -800,7 +800,7 @@ a:hover {
   .button {
     font-size: 28px;
     width: 200px;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
   .title {
@@ -820,9 +820,9 @@ a:hover {
     width: 100%;
   }
   .about__box .item__img {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     width: 30px;
-    height: auto;
+    height: 30px;
   }
   .about__box .item__text {
     width: 352px;
@@ -938,7 +938,7 @@ a:hover {
 
   .button {
     font-size: 16px;
-    width: 106px;
+    width: 180px;
   }
 
   .about__box .item__text {
@@ -990,6 +990,9 @@ a:hover {
   .autor .subtitle::after {
     margin: 15px auto 0 auto;
   }
+  .autor__img {
+    height: 350px;
+  }
 
   .buy__subtitle {
     width: 100%;
@@ -1018,6 +1021,9 @@ a:hover {
     width: 71%;
   }
 
+  .about__box .item__text {
+    width: auto;
+  }
   .about .new__block--item__header {
     font-size: 22px;
     width: 330px;
@@ -1029,6 +1035,37 @@ a:hover {
   .about .new__block--item__text {
     font-size: 18px;
     padding: 65px 20px 30px 20px;
+  }
+
+  .footer__inner--text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .about .new__block {
+    margin-top: 60px;
+  }
+  .about .new__block--item__header {
+    padding: 5px 0 0 40px;
+    font-size: 18px;
+    width: 290px;
+    height: 50px;
+  }
+  .about .new__block--item__text {
+    font-size: 18px;
+    padding: 50px 20px 30px 20px;
+  }
+
+  .buy__cost--last::after {
+    width: 70%;
+  }
+
+  .autor__text--about {
+    font-size: 18px;
   }
 }
 /*FONTS*/

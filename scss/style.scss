@@ -847,7 +847,7 @@ a {
     .button {
         font-size: 28px;
         width: 200px;
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .title {
         font-size: 48px;
@@ -865,9 +865,9 @@ a {
                 width: 100%;
 
                 &__img {
-                    margin-bottom: 0;
+                    margin-bottom: 30px;
                     width: 30px;
-                    height: auto;
+                    height: 30px;
                 }
                 &__text {
                     width: 352px;
@@ -996,7 +996,7 @@ a {
     }
     .button {
         font-size: 16px;
-        width: 106px;
+        width: 180px;
     }
     .about {
         &__box {
@@ -1067,6 +1067,9 @@ a {
                 margin: 15px auto 0 auto;
             }
         }
+        &__img {
+            height: 350px;
+        }
     }
     .buy {
         &__subtitle {
@@ -1101,6 +1104,13 @@ a {
         }
     }
     .about {
+        &__box {
+            .item {
+                &__text {
+                    width: auto;
+                }
+            }
+        }
         .new {
             &__block {
                 &--item {
@@ -1118,6 +1128,53 @@ a {
                     }
                 }
                 
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            &--text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .title {
+        font-size: 25px;
+    }
+    .about {
+        .new {
+            &__block {
+                margin-top: 60px;
+                &--item {
+                    &__header {
+                        padding: 5px 0 0 40px;
+                        font-size: 18px;
+                        width: 290px;
+                        height: 50px;
+                    }
+                    &__text {
+                        font-size: 18px;
+                        padding: 50px 20px 30px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .buy {
+        &__cost {
+            &--last {
+                &::after {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .autor {
+        &__text {
+            &--about {
+                font-size: 18px;
             }
         }
     }
